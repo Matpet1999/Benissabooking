@@ -46,12 +46,19 @@
             </div>
             <div class="features">
                 <ul class="featurestop">
-                    <li><span class="material-icons-outlined">hotel</span>4 soverom</li>
+                    <li><span class="material-icons-outlined">hotel</span>3 soverom</li> 
+                    <li><span class="material-icons-outlined">group</span>6 gjester</li>
+                    <li><span class="material-icons-outlined">bathroom</span>2 bad</li>
                     <li><span class="material-icons-outlined">pool</span>Privat pool</li>
-                    <li><span class="material-icons-outlined">wifi</span>Gratis WiFi</li>
+                    <li><span class="material-icons-outlined">wifi</span>WiFi</li>
                     <li><span class="material-icons-outlined">ac_unit</span>Air condition</li>
                     <li><span class="material-icons-outlined">local_parking</span>Gratis parkering</li>
-                    <li><span class="material-icons-outlined">beach_access</span>Nærhet til strand</li>
+                    <li><span class="material-icons-outlined">beach_access</span>Nærhet til strand</li> 
+                    <li><span class="material-icons-outlined">yard</span>Hage</li>
+                    <li><span class="material-icons-outlined">landscape</span>Utsikt</li>
+                    <li><span class="material-icons-outlined">dining</span>Outdoor diningarea</li>
+                    <li><span class="material-icons-outlined">tv</span>TV</li>
+                
                 </ul>
             </div>
         </div>
@@ -61,24 +68,24 @@
     <section class="gallery">
         <div class="gallery-grid">
             <div class="main-image" data-index="0">
-                <img src="BILDER BENISSA/image019 (1).jpeg" alt="Casa Blanca utsikt">
+                <img src="BILDER BENISSA/image019 (1).jpeg" alt="Casa Blanca utsikt" class="gallery-item">
             </div>
             <div class="thumbnail-grid">
                 <div class="thumbnail" data-index="1">
-                    <img src="BILDER BENISSA/image016 (2).jpeg" alt="Casa Blanca pool">
+                    <img src="BILDER BENISSA/image016 (2).jpeg" alt="Casa Blanca pool" class="gallery-item">
                 </div>
                 <div class="thumbnail" data-index="2">
-                    <img src="BILDER BENISSA/image014.jpeg" alt="Casa Blanca stue">
+                    <img src="BILDER BENISSA/image014.jpeg" alt="Casa Blanca stue" class="gallery-item">
                 </div>
                 <div class="thumbnail" data-index="3">
-                    <img src="BILDER BENISSA/image006.jpeg" alt="Casa Blanca kjøkken">
+                    <img src="BILDER BENISSA/image006.jpeg" alt="Casa Blanca kjøkken" class="gallery-item">
                 </div>
                 <div class="thumbnail" data-index="4">
-                    <img src="BILDER BENISSA/image007.jpeg" alt="Casa Blanca soverom">
+                    <img src="BILDER BENISSA/image007.jpeg" alt="Casa Blanca soverom" class="gallery-item">
                 </div>
             </div>
         </div>
-        <a href="#" class="see-all" id="see-all">See all</a>
+        <a href="#" class="see-all" id="see-all">Se alle bilder</a>
     </section>
 
     <!-- Area Section -->
@@ -138,43 +145,58 @@
 
     <!-- Availability Section -->
     <section class="availability" id="availability-section">
-        <h2>Ledighetskalender</h2>
+        <h2> Book your stay</h2>
         <div class="calendar-container">
-            <div class="date-selector">
-                <div class="date-input">
-                    <label for="check-in">Ankomst</label>
-                    <input type="date" id="check-in" name="check-in">
+            <div class="calendar-group">
+                <div class="date-selector">
+                    <div class="date-input">
+                        <label for="check-in">Ankomst</label>
+                        <input type="date" id="check-in" name="check-in">
+                    </div>
+                    <div class="date-input">
+                        <label for="check-out">Avreise</label>
+                        <input type="date" id="check-out" name="check-out">
+                    </div>
                 </div>
-                <div class="date-input">
-                    <label for="check-out">Avreise</label>
-                    <input type="date" id="check-out" name="check-out">
+                <div class="visual-calendar">
+                    <div class="calendar-header">
+                        <button id="prev-month" class="calendar-nav">
+                            <span class="material-icons-outlined">chevron_left</span>
+                        </button>
+                        <h3 id="current-month">Januar 2024</h3>
+                        <button id="next-month" class="calendar-nav">
+                            <span class="material-icons-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                    <div class="weekdays">
+                        <div>Man</div>
+                        <div>Tir</div>
+                        <div>Ons</div>
+                        <div>Tor</div>
+                        <div>Fre</div>
+                        <div>Lør</div>
+                        <div>Søn</div>
+                    </div>
+                    <div id="calendar-days" class="calendar-days"></div>
                 </div>
-            </div>
-            <div class="visual-calendar">
-                <div class="calendar-header">
-                    <button id="prev-month" class="calendar-nav">
-                        <span class="material-icons">chevron_left</span>
-                    </button>
-                    <h3 id="current-month">Januar 2024</h3>
-                    <button id="next-month" class="calendar-nav">
-                        <span class="material-icons">chevron_right</span>
-                    </button>
-                </div>
-                <div class="weekdays">
-                    <div>Man</div>
-                    <div>Tir</div>
-                    <div>Ons</div>
-                    <div>Tor</div>
-                    <div>Fre</div>
-                    <div>Lør</div>
-                    <div>Søn</div>
-                </div>
-                <div id="calendar-days" class="calendar-days"></div>
             </div>
             <div class="price-calculator">
                 <p>Pris per natt: 2.500 kr</p>
                 <p class="total-price">Total pris: <span id="total-price">0</span> kr</p>
-                <button class="booking-cta" id="booking-request">Send bookingforespørsel</button>
+                <form action="https://formspree.io/f/manevznb" method="POST">
+                    <div class="form-group">
+                        <label for="email">Din e-post</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Melding (valgfritt):</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <input type="hidden" name="ankomst" id="form-check-in">
+                    <input type="hidden" name="avreise" id="form-check-out">
+                    <input type="hidden" name="totalpris" id="form-total-price">
+                    <button type="submit" class="booking-cta">Send bookingforespørsel</button>
+                </form>
             </div>
         </div>
     </section>
@@ -243,14 +265,30 @@
         const seeAllBtn = document.getElementById('see-all');
         let currentIndex = 0;
 
-        // Array of all gallery images
-        const galleryImages = Array.from(galleryItems).map(item => ({
-            src: item.querySelector('img').src,
-            alt: item.querySelector('img').alt
-        }));
+        // Array of all gallery images with descriptions
+        const galleryImages = [
+            { src: 'BILDER BENISSA/image019 (1).jpeg', alt: 'Utsikt fra Casa Blanca' },
+            { src: 'BILDER BENISSA/image016 (2).jpeg', alt: 'Privat pool' },
+            { src: 'BILDER BENISSA/image014.jpeg', alt: 'Stue' },
+            { src: 'BILDER BENISSA/image006.jpeg', alt: 'Kjøkken' },
+            { src: 'BILDER BENISSA/image007.jpeg', alt: 'Soverom' },
+            { src: 'BILDER BENISSA/image001.jpeg', alt: 'Uterom' },
+            { src: 'BILDER BENISSA/image002.jpeg', alt: 'Spisestue' },
+            { src: 'BILDER BENISSA/image003.jpeg', alt: 'Stue' },
+            { src: 'BILDER BENISSA/image004.jpeg', alt: 'Kjøkken' },
+            { src: 'BILDER BENISSA/image005.jpeg', alt: 'Bad' },
+            { src: 'BILDER BENISSA/image009.jpeg', alt: 'Uterom' },
+            { src: 'BILDER BENISSA/image010.jpeg', alt: 'Hage' },
+            { src: 'BILDER BENISSA/image011.jpeg', alt: 'Pool' },
+            { src: 'BILDER BENISSA/image012.jpeg', alt: 'Utsikt' },
+            { src: 'BILDER BENISSA/image013.jpeg', alt: 'Terasse' },
+            { src: 'BILDER BENISSA/image015.jpeg', alt: 'Uterom' },
+            { src: 'BILDER BENISSA/image017 (1).jpeg', alt: 'Hage' },
+            { src: 'BILDER BENISSA/image018.jpeg', alt: 'Utsikt' }
+        ];
 
         // Open lightbox
-        galleryItems.forEach((item, index) => {
+        document.querySelectorAll('.gallery-item').forEach((item, index) => {
             item.addEventListener('click', () => {
                 currentIndex = index;
                 updateLightbox();
@@ -409,27 +447,17 @@
                     const nights = Math.ceil((selectedEndDate - selectedStartDate) / (1000 * 60 * 60 * 24));
                     const totalPrice = nights * pricePerNight;
                     totalPriceElement.textContent = totalPrice;
+                    
+                    // Oppdater skjulte form-felter
+                    document.getElementById('form-check-in').value = checkInInput.value;
+                    document.getElementById('form-check-out').value = checkOutInput.value;
+                    document.getElementById('form-total-price').value = totalPrice;
                 } else {
                     totalPriceElement.textContent = '0';
                 }
             }
 
             updateCalendar();
-        });
-
-        // Legg til booking CTA funksjonalitet
-        document.getElementById('booking-request').addEventListener('click', function() {
-            if (!selectedStartDate || !selectedEndDate) {
-                alert('Vennligst velg både ankomst- og avreisedato');
-                return;
-            }
-            
-            const formattedStartDate = `${selectedStartDate.getDate()}.${selectedStartDate.getMonth() + 1}.${selectedStartDate.getFullYear()}`;
-            const formattedEndDate = `${selectedEndDate.getDate()}.${selectedEndDate.getMonth() + 1}.${selectedEndDate.getFullYear()}`;
-            const totalPrice = document.getElementById('total-price').textContent;
-            
-            const mailtoLink = `mailto:m.petlund@gmail.com?subject=Bookingforespørsel Casa Blanca&body=Jeg ønsker å booke Casa Blanca fra ${formattedStartDate} til ${formattedEndDate}%0D%0ATotal pris: ${totalPrice} kr`;
-            window.location.href = mailtoLink;
         });
     </script>
 </body>
