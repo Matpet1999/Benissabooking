@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa Blanca - Feriebolig i Benissa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Explora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <div class="top-bar-content">
+            <div class="brand">BLANCA</div>
+            <nav>
+                <a href="#about">ABOUT</a>
+                <a href="#area">AREA</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="gradient-overlay"></div>
+        <div class="hero-content">
+            <img src="doodle_icon_pack_white/palme.png" alt="Palme" class="hero-palme">
+            <h1>CASA BLANCA</h1>
+            <p class="subtitle"> Fanadix, Spain </p>
+            <button class="cta-button" onclick="document.getElementById('availability-section').scrollIntoView({behavior: 'smooth'})">Book nå</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About</h2>
+        <div class="about-content">
+            <div class="description">
+                <p>Casa Blanca er en luksuriøs villa i hjertet av Benissa, Spania. Med sin moderne arkitektur og tradisjonelle spanske detaljer, tilbyr denne vakre eiendommen en unik kombinasjon av komfort og autentisitet.</p>
+                <p>Villaen har 4 soverom, 3 bad, en stor stue, et moderne kjøkken og en fantastisk utendørs pool. Den ligger i et rolig boligområde, bare noen minutter fra strendene og sentrum av Benissa.</p>
+            </div>
+            <div class="features">
+                <ul class="featurestop">
+                    <li><span class="material-icons-outlined">hotel</span>4 soverom</li>
+                    <li><span class="material-icons-outlined">pool</span>Privat pool</li>
+                    <li><span class="material-icons-outlined">wifi</span>Gratis WiFi</li>
+                    <li><span class="material-icons-outlined">ac_unit</span>Air condition</li>
+                    <li><span class="material-icons-outlined">local_parking</span>Gratis parkering</li>
+                    <li><span class="material-icons-outlined">beach_access</span>Nærhet til strand</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="gallery-grid">
+            <div class="main-image" data-index="0">
+                <img src="BILDER BENISSA/image019 (1).jpeg" alt="Casa Blanca utsikt">
+            </div>
+            <div class="thumbnail-grid">
+                <div class="thumbnail" data-index="1">
+                    <img src="BILDER BENISSA/image016 (2).jpeg" alt="Casa Blanca pool">
+                </div>
+                <div class="thumbnail" data-index="2">
+                    <img src="BILDER BENISSA/image014.jpeg" alt="Casa Blanca stue">
+                </div>
+                <div class="thumbnail" data-index="3">
+                    <img src="BILDER BENISSA/image006.jpeg" alt="Casa Blanca kjøkken">
+                </div>
+                <div class="thumbnail" data-index="4">
+                    <img src="BILDER BENISSA/image007.jpeg" alt="Casa Blanca soverom">
+                </div>
+            </div>
+        </div>
+        <a href="#" class="see-all" id="see-all">See all</a>
+    </section>
+
+    <!-- Area Section -->
+    <section class="area" id="area">
+        <h2>Area</h2>
+        <div class="area-content">
+            <div class="area-text">
+                <p>Nestled in the heart of Benissa, Casa Blanca offers the perfect blend of tranquility and convenience. Our villa is located in a peaceful residential area, just a short walk from the beautiful Mediterranean coastline.</p>
+                
+                <div class="area-features">
+                    <div class="feature">
+                        <span class="material-icons-outlined">beach_access</span>
+                        <h3>Beaches</h3>
+                        <p>15-minute walk to pristine beaches with crystal-clear waters</p>
+                    </div>
+                    <div class="feature">
+                        <span class="material-icons-outlined">restaurant</span>
+                        <h3>Dining</h3>
+                        <p>Local restaurants and cafes within walking distance</p>
+                    </div>
+                    <div class="feature">
+                        <span class="material-icons-outlined">shopping_bag</span>
+                        <h3>Shopping</h3>
+                        <p>Supermarkets and local shops nearby</p>
+                    </div>
+                    <div class="feature">
+                        <span class="material-icons-outlined">directions_car</span>
+                        <h3>Transport</h3>
+                        <p>Easy access to major attractions and cities</p>
+                    </div>
+                </div>
+            </div>
+            <div class="area-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20687.204481445!2d0.08723332976650379!3d38.67654083330003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129e07391cd7ef37%3A0x1bbc521845f8762!2sBenissa%2C%20Alacant%2C%20Spania!5e0!3m2!1sno!2sno!4v1744563842576!5m2!1sno!2sno&maptype=roadmap&style=element:geometry|color:0xebe3cd&style=element:labels.text.fill|color:0x523735&style=element:labels.text.stroke|color:0xf5f1e6&style=feature:administrative|element:geometry.stroke|color:0xc9b2a6&style=feature:administrative.land_parcel|element:geometry.stroke|color:0xdcd2be&style=feature:administrative.land_parcel|element:labels|visibility:off&style=feature:administrative.land_parcel|element:labels.text.fill|color:0xae9e90&style=feature:landscape.natural|element:geometry|color:0xdfd2ae&style=feature:poi|element:geometry|color:0xdfd2ae&style=feature:poi|element:labels.text|visibility:off&style=feature:poi|element:labels.text.fill|color:0x93817c&style=feature:poi.park|element:geometry.fill|color:0xa5b076&style=feature:poi.park|element:labels.icon|color:0x47904c&style=feature:poi.park|element:labels.text.fill|color:0x447530&style=feature:road|element:geometry|color:0xf5f1e6&style=feature:road.arterial|element:geometry|color:0xfdfcf8&style=feature:road.arterial|element:labels|visibility:off&style=feature:road.highway|element:geometry|color:0xf8c967&style=feature:road.highway|element:geometry.stroke|color:0xe9bc62&style=feature:road.highway|element:labels|visibility:off&style=feature:road.highway.controlled_access|element:geometry|color:0xe98d58&style=feature:road.highway.controlled_access|element:geometry.stroke|color:0xdb8555&style=feature:road.local|visibility:off&style=feature:road.local|element:labels|visibility:off&style=feature:road.local|element:labels.text.fill|color:0x806b63&style=feature:transit.line|element:geometry|color:0xdfd2ae&style=feature:transit.line|element:labels.text.fill|color:0x8f7d77&style=feature:transit.line|element:labels.text.stroke|color:0xebe3cd&style=feature:transit.station|element:geometry|color:0xdfd2ae&style=feature:water|element:geometry.fill|color:0xb9d3c2&style=feature:water|element:labels.text.fill|color:0x92998d" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-img">
+            <p class="lightbox-caption"></p>
+            <span class="material-icons-outlined close-btn">close</span>
+            <span class="material-icons-outlined prev-btn">chevron_left</span>
+            <span class="material-icons-outlined next-btn">chevron_right</span>
+        </div>
+    </div>
+
+    <!-- Availability Section -->
+    <section class="availability" id="availability-section">
+        <h2>Ledighetskalender</h2>
+        <div class="calendar-container">
+            <div class="date-selector">
+                <div class="date-input">
+                    <label for="check-in">Ankomst</label>
+                    <input type="date" id="check-in" name="check-in">
+                </div>
+                <div class="date-input">
+                    <label for="check-out">Avreise</label>
+                    <input type="date" id="check-out" name="check-out">
+                </div>
+            </div>
+            <div class="visual-calendar">
+                <div class="calendar-header">
+                    <button id="prev-month" class="calendar-nav">
+                        <span class="material-icons">chevron_left</span>
+                    </button>
+                    <h3 id="current-month">Januar 2024</h3>
+                    <button id="next-month" class="calendar-nav">
+                        <span class="material-icons">chevron_right</span>
+                    </button>
+                </div>
+                <div class="weekdays">
+                    <div>Man</div>
+                    <div>Tir</div>
+                    <div>Ons</div>
+                    <div>Tor</div>
+                    <div>Fre</div>
+                    <div>Lør</div>
+                    <div>Søn</div>
+                </div>
+                <div id="calendar-days" class="calendar-days"></div>
+            </div>
+            <div class="price-calculator">
+                <p>Pris per natt: 2.500 kr</p>
+                <p class="total-price">Total pris: <span id="total-price">0</span> kr</p>
+                <button class="booking-cta" id="booking-request">Send bookingforespørsel</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h2>Anmeldelser</h2>
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="review-stars">
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                </div>
+                <p class="review-text">"En fantastisk villa med utrolig utsikt. Perfekt for familier og store grupper. Vi kommer gjerne tilbake!"</p>
+                <p class="review-author">- Maria og familien, Norge</p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                </div>
+                <p class="review-text">"Villaen overgikk alle forventninger. Privat basseng, moderne fasiliteter og nydelig innredning. Anbefales på det sterkeste!"</p>
+                <p class="review-author">- Anders og vennene, Sverige</p>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star</span>
+                    <span class="material-icons-outlined">star_half</span>
+                </div>
+                <p class="review-text">"Flott beliggenhet, romslig og velutstyrt. Perfekt for en avslappende ferie i solen."</p>
+                <p class="review-author">- Lisa og familien, Danmark</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="brand">BLANCA</div>
+            <nav>
+                <a href="#about">ABOUT</a>
+                <a href="#area">AREA</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        // Lightbox functionality
+        const lightbox = document.querySelector('.lightbox');
+        const lightboxImg = document.querySelector('.lightbox-img');
+        const lightboxCaption = document.querySelector('.lightbox-caption');
+        const closeBtn = document.querySelector('.close-btn');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const seeAllBtn = document.getElementById('see-all');
+        let currentIndex = 0;
+
+        // Array of all gallery images
+        const galleryImages = Array.from(galleryItems).map(item => ({
+            src: item.querySelector('img').src,
+            alt: item.querySelector('img').alt
+        }));
+
+        // Open lightbox
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                currentIndex = index;
+                updateLightbox();
+                lightbox.classList.add('active');
+            });
+        });
+
+        // See all button functionality
+        seeAllBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            currentIndex = 0;
+            updateLightbox();
+            lightbox.classList.add('active');
+        });
+
+        // Close lightbox
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        // Close lightbox when clicking outside
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        // Navigation
+        prevBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            updateLightbox();
+        });
+
+        nextBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            updateLightbox();
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'Escape') {
+                    lightbox.classList.remove('active');
+                } else if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+                    updateLightbox();
+                } else if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % galleryImages.length;
+                    updateLightbox();
+                }
+            }
+        });
+
+        function updateLightbox() {
+            lightboxImg.src = galleryImages[currentIndex].src;
+            lightboxImg.alt = galleryImages[currentIndex].alt;
+            lightboxCaption.textContent = galleryImages[currentIndex].alt;
+        }
+
+        // Kalender funksjonalitet
+        document.addEventListener('DOMContentLoaded', function() {
+            const calendarDays = document.getElementById('calendar-days');
+            const currentMonthElement = document.getElementById('current-month');
+            const prevMonthBtn = document.getElementById('prev-month');
+            const nextMonthBtn = document.getElementById('next-month');
+            const checkInInput = document.getElementById('check-in');
+            const checkOutInput = document.getElementById('check-out');
+            const totalPriceElement = document.getElementById('total-price');
+            const pricePerNight = 2500;
+
+            let currentDate = new Date();
+            let selectedStartDate = null;
+            let selectedEndDate = null;
+
+            const months = [
+                'Januar', 'Februar', 'Mars', 'April', 'Mai', 'Juni',
+                'Juli', 'August', 'September', 'Oktober', 'November', 'Desember'
+            ];
+
+            function updateCalendar() {
+                const year = currentDate.getFullYear();
+                const month = currentDate.getMonth();
+                
+                currentMonthElement.textContent = `${months[month]} ${year}`;
+                
+                const firstDay = new Date(year, month, 1);
+                const lastDay = new Date(year, month + 1, 0);
+                const startingDay = firstDay.getDay() || 7; // Konverter søndag fra 0 til 7
+                
+                calendarDays.innerHTML = '';
+                
+                // Legg til tomme dager før første dag i måneden
+                for (let i = 1; i < startingDay; i++) {
+                    const emptyDay = document.createElement('div');
+                    emptyDay.className = 'calendar-day empty';
+                    calendarDays.appendChild(emptyDay);
+                }
+                
+                // Legg til alle dager i måneden
+                for (let day = 1; day <= lastDay.getDate(); day++) {
+                    const dayElement = document.createElement('div');
+                    dayElement.className = 'calendar-day';
+                    dayElement.textContent = day;
+                    
+                    const date = new Date(year, month, day);
+                    const today = new Date();
+                    today.setHours(0, 0, 0, 0);
+                    
+                    if (date < today) {
+                        dayElement.classList.add('past');
+                    } else if (selectedStartDate && selectedEndDate && 
+                              date >= selectedStartDate && date <= selectedEndDate) {
+                        dayElement.classList.add('selected');
+                    } else if (selectedStartDate && date.getTime() === selectedStartDate.getTime()) {
+                        dayElement.classList.add('start-date');
+                    } else if (selectedEndDate && date.getTime() === selectedEndDate.getTime()) {
+                        dayElement.classList.add('end-date');
+                    }
+                    
+                    dayElement.addEventListener('click', () => {
+                        if (date < today) return;
+                        
+                        if (!selectedStartDate || (selectedStartDate && selectedEndDate)) {
+                            selectedStartDate = date;
+                            selectedEndDate = null;
+                            const formattedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+                            checkInInput.value = formattedDate;
+                            checkOutInput.value = '';
+                        } else if (date > selectedStartDate) {
+                            selectedEndDate = date;
+                            const formattedDate = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+                            checkOutInput.value = formattedDate;
+                            calculateTotalPrice();
+                        }
+                        updateCalendar();
+                    });
+                    
+                    calendarDays.appendChild(dayElement);
+                }
+            }
+
+            prevMonthBtn.addEventListener('click', () => {
+                currentDate.setMonth(currentDate.getMonth() - 1);
+                updateCalendar();
+            });
+
+            nextMonthBtn.addEventListener('click', () => {
+                currentDate.setMonth(currentDate.getMonth() + 1);
+                updateCalendar();
+            });
+
+            function calculateTotalPrice() {
+                if (selectedStartDate && selectedEndDate) {
+                    const nights = Math.ceil((selectedEndDate - selectedStartDate) / (1000 * 60 * 60 * 24));
+                    const totalPrice = nights * pricePerNight;
+                    totalPriceElement.textContent = totalPrice;
+                } else {
+                    totalPriceElement.textContent = '0';
+                }
+            }
+
+            updateCalendar();
+        });
+
+        // Legg til booking CTA funksjonalitet
+        document.getElementById('booking-request').addEventListener('click', function() {
+            if (!selectedStartDate || !selectedEndDate) {
+                alert('Vennligst velg både ankomst- og avreisedato');
+                return;
+            }
+            
+            const formattedStartDate = `${selectedStartDate.getDate()}.${selectedStartDate.getMonth() + 1}.${selectedStartDate.getFullYear()}`;
+            const formattedEndDate = `${selectedEndDate.getDate()}.${selectedEndDate.getMonth() + 1}.${selectedEndDate.getFullYear()}`;
+            const totalPrice = document.getElementById('total-price').textContent;
+            
+            const mailtoLink = `mailto:m.petlund@gmail.com?subject=Bookingforespørsel Casa Blanca&body=Jeg ønsker å booke Casa Blanca fra ${formattedStartDate} til ${formattedEndDate}%0D%0ATotal pris: ${totalPrice} kr`;
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html> 
