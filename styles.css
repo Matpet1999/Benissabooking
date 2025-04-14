@@ -722,23 +722,34 @@ footer a {
 
 .lightbox-content {
     position: relative;
-    max-width: 90%;
-    max-height: 90%;
-    text-align: center;
+    width: 80vw;         /* Fast bredde på 80% av viewport */
+    height: 80vh;        /* Fast høyde på 80% av viewport */
+    background: #000;    /* Svart bakgrunn for rammen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border-radius: 8px;
 }
 
 .lightbox-img {
     max-width: 100%;
-    max-height: 80vh;
-    object-fit: contain;
-    margin-bottom: 1rem;
+    max-height: 100%;
+    object-fit: contain; /* Beholder bildets proporsjoner */
+    width: auto;
+    height: auto;
 }
 
 .lightbox-caption {
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
     color: white;
-    font-family: 'Italiana', serif;
-    font-size: 1.2rem;
-    margin-top: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent bakgrunn */
 }
 
 .close-btn, .prev-btn, .next-btn {
@@ -1028,4 +1039,11 @@ footer a {
         right: 10px;
         font-size: 2rem;
     }
+}
+
+.calendar-day.booked {
+    background-color: #ffebee;
+    color: #c62828;
+    cursor: not-allowed;
+    text-decoration: line-through;
 } 

@@ -263,24 +263,24 @@
 
         // Array of all gallery images with descriptions
         const galleryImages = [
-            { src: 'BILDER BENISSA/image019 (1).jpeg', alt: 'Utsikt fra Casa Blanca' },
-            { src: 'BILDER BENISSA/image016 (2).jpeg', alt: 'Privat pool' },
-            { src: 'BILDER BENISSA/image014.jpeg', alt: 'Stue' },
-            { src: 'BILDER BENISSA/image006.jpeg', alt: 'Kjøkken' },
-            { src: 'BILDER BENISSA/image007.jpeg', alt: 'Soverom' },
             { src: 'BILDER BENISSA/image001.jpeg', alt: 'Uterom' },
             { src: 'BILDER BENISSA/image002.jpeg', alt: 'Spisestue' },
             { src: 'BILDER BENISSA/image003.jpeg', alt: 'Stue' },
             { src: 'BILDER BENISSA/image004.jpeg', alt: 'Kjøkken' },
             { src: 'BILDER BENISSA/image005.jpeg', alt: 'Bad' },
+            { src: 'BILDER BENISSA/image006.jpeg', alt: 'Kjøkken' },
+            { src: 'BILDER BENISSA/image007.jpeg', alt: 'Soverom' },
             { src: 'BILDER BENISSA/image009.jpeg', alt: 'Uterom' },
             { src: 'BILDER BENISSA/image010.jpeg', alt: 'Hage' },
             { src: 'BILDER BENISSA/image011.jpeg', alt: 'Pool' },
             { src: 'BILDER BENISSA/image012.jpeg', alt: 'Utsikt' },
-            { src: 'BILDER BENISSA/image013.jpeg', alt: 'Terasse' },
+            { src: 'BILDER BENISSA/image013.jpeg', alt: 'Terrasse' },
+            { src: 'BILDER BENISSA/image014.jpeg', alt: 'Stue' },
             { src: 'BILDER BENISSA/image015.jpeg', alt: 'Uterom' },
+            { src: 'BILDER BENISSA/image016 (2).jpeg', alt: 'Pool' },
             { src: 'BILDER BENISSA/image017 (1).jpeg', alt: 'Hage' },
-            { src: 'BILDER BENISSA/image018.jpeg', alt: 'Utsikt' }
+            { src: 'BILDER BENISSA/image018.jpeg', alt: 'Utsikt' },
+            { src: 'BILDER BENISSA/image019 (1).jpeg', alt: 'Utsikt fra Casa Blanca' }
         ];
 
         // Open lightbox
@@ -366,6 +366,20 @@
                 'Juli', 'August', 'September', 'Oktober', 'November', 'Desember'
             ];
 
+            // LEGG TIL BOOKED DAGER HER
+            const bookedDates = [
+                // April 2025
+                new Date(2025, 3, 13),  // 13. april
+                new Date(2025, 3, 14),  // 14. april
+                new Date(2025, 3, 15),  // 15. april
+                new Date(2025, 3, 16),  // 16. april
+                new Date(2025, 3, 17),  // 17. april
+                new Date(2025, 3, 18),  // 18. april
+                new Date(2025, 3, 19),  // 19. april
+                new Date(2025, 3, 20),  // 20. april
+                new Date(2025, 3, 21)   // 21. april
+            ];
+
             function updateCalendar() {
                 const year = currentDate.getFullYear();
                 const month = currentDate.getMonth();
@@ -374,7 +388,7 @@
                 
                 const firstDay = new Date(year, month, 1);
                 const lastDay = new Date(year, month + 1, 0);
-                const startingDay = firstDay.getDay() || 7; // Konverter søndag fra 0 til 7
+                const startingDay = firstDay.getDay() || 7;
                 
                 calendarDays.innerHTML = '';
                 
@@ -395,6 +409,12 @@
                     const today = new Date();
                     today.setHours(0, 0, 0, 0);
                     
+                    // Sjekk om datoen er booket
+                    if (bookedDates.some(bookedDate => 
+                        date.getTime() === bookedDate.getTime())) {
+                        dayElement.classList.add('booked');
+                    }
+                    
                     if (date < today) {
                         dayElement.classList.add('past');
                     } else if (selectedStartDate && selectedEndDate && 
@@ -407,7 +427,7 @@
                     }
                     
                     dayElement.addEventListener('click', () => {
-                        if (date < today) return;
+                        if (date < today || dayElement.classList.contains('booked')) return;
                         
                         if (!selectedStartDate || (selectedStartDate && selectedEndDate)) {
                             selectedStartDate = date;
