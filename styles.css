@@ -113,6 +113,9 @@ h1 {
     padding: 0.8rem 1.8rem;
     font-size: 1.1rem;
     background-color: transparent;
+    background: rgba(251, 251, 251, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border: 2px solid white;
     color: white;
     cursor: pointer;
@@ -997,5 +1000,32 @@ footer a {
 .booking-cta {
     width: 100%;
     margin-top: 1rem;
-} 
+}
+
+@media (max-width: 480px) {
+    .lightbox-content {
+        max-width: 95%;
+    }
+
+    .prev-btn, .next-btn {
+        position: fixed;  /* Endret fra absolute til fixed */
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 2rem;  /* Mindre ikoner */
+        padding: 1rem;    /* Større klikkbar overflate */
+    }
+
+    .prev-btn {
+        left: 10px;      /* Justert posisjon */
+    }
+
+    .next-btn {
+        right: 10px;     /* Justert posisjon */
+    }
+
+    .close-btn {
+        top: 10px;       /* Justert posisjon */
+        right: 10px;
+        font-size: 2rem;
+    }
 } 
