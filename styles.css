@@ -71,7 +71,6 @@ h1 {
 /* Hero Section */
 .hero {
     height: 80vh;
-    background-image: url('casablanca.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -80,7 +79,27 @@ h1 {
     justify-content: center;
     text-align: center;
     color: #ffffff;
+    animation: backgroundSlideshow 15s infinite;
 }
+
+@keyframes backgroundSlideshow {
+    0%, 20% {
+        background-image: url('BILDER BENISSA/poolandsea.jpeg');
+    }
+    21%, 40% {
+        background-image: url('BILDER BENISSA/pool.jpg');
+    }
+    41%, 60% {
+        background-image: url('BILDER BENISSA/utsikt.jpeg');
+    }
+    61%, 80% {
+        background-image: url('BILDER BENISSA/helestuenvm.jpeg');
+    }
+    81%, 100% {
+        background-image: url('BILDER BENISSA/fin\ hengekøye.jpg');
+    }
+}
+
 
 .hero-content {
     z-index: 2;
@@ -186,7 +205,8 @@ h1 {
     gap: 1rem;
     list-style: none;
     margin-top: 10px;
-    justify-content: left;
+    margin: 20px;
+    justify-content: center;
 }
 
 
@@ -210,7 +230,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
-    color: #845050;
+    color: #866652;
 }
 
 @media (max-width: 768px) {
