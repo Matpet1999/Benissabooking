@@ -124,7 +124,10 @@ h1 {
     font-family: 'Italiana', serif;
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    font-weight: 300;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #00000095;
+   
 }
 
 .cta-button {
@@ -132,11 +135,11 @@ h1 {
     padding: 0.8rem 1.8rem;
     font-size: 1.1rem;
     background-color: transparent;
-    background: rgba(251, 251, 251, 0.1);
+    background: rgba(35, 20, 7, 0.562);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 2px solid white;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 30px;
@@ -153,7 +156,7 @@ h1 {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 200px;
+    height: 300px;
     background: linear-gradient(to top, #E8E2DD, transparent);
 }
 
@@ -253,11 +256,21 @@ h1 {
 
 
 /* Gallery Section */
+.photogallery {
+
+text-align: center;
+font-family: 'Italiana', serif;
+font-size: 1.5rem;
+margin-bottom: 1rem;
+font-weight: 300;
+}
+
 .gallery {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
+
 
 .gallery-grid {
     display: grid;
@@ -436,6 +449,7 @@ h1 {
 }
 
 /*Area section*/
+
 .area {
     padding: 5rem 2rem;
     max-width: 1200px;
