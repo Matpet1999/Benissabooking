@@ -233,7 +233,7 @@ h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-align: center;
-    color: #866652;
+    color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -390,8 +390,8 @@ font-weight: 300;
 
 .photo-container img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    height: 400px;
+    object-fit:cover;
     border-radius: 8px;
 }
 
@@ -405,6 +405,7 @@ font-weight: 300;
   font-family: 'Italiana', serif;
     margin-bottom: 15px;
     color: #333;
+    font-weight: bold;
 }
 .text-container h2 {
     font-size: 18px;
@@ -427,6 +428,71 @@ font-weight: 300;
     color: #666;
     margin: 0;
 }
+
+#beaches {
+    height:auto;
+    background: #E8E2DD;
+    margin: 50px auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 12px;
+
+     /* outline + skygge */
+   outline: 2px solid #3e1b0b76;
+   outline-offset: 1px;          /* litt luft mellom outline og elementet */
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    scroll-margin-top: 30vh; /* flytter den slik at den havner midt-ish */
+  }
+
+  #dining  {
+    height:auto;
+    background: #E8E2DD;
+    margin: 50px auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 12px;
+
+      /* outline + skygge */
+   outline: 2px solid #3e1b0b76;
+   outline-offset: 1px;          /* litt luft mellom outline og elementet */
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    scroll-margin-top: 30vh; /* flytter den slik at den havner midt-ish */
+  }
+
+  #activities {
+    height:auto;
+    background: #E8E2DD;
+    margin: 50px auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 12px;
+
+       /* outline + skygge */
+   outline: 2px solid #3e1b0b76;
+   outline-offset: 1px;          /* litt luft mellom outline og elementet */
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    scroll-margin-top: 30vh; /* flytter den slik at den havner midt-ish */
+  }
+
+  #shopping {
+    height:auto;
+    background: #E8E2DD;
+    margin: 50px auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 12px;
+
+       /* outline + skygge */
+   outline: 2px solid #3e1b0b76;
+   outline-offset: 1px;          /* litt luft mellom outline og elementet */
+     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+
+    scroll-margin-top: 30vh; /* flytter den slik at den havner midt-ish */
+  }
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
@@ -464,7 +530,7 @@ font-weight: 300;
 }
 
 .area-content {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: start;
@@ -490,18 +556,19 @@ font-weight: 300;
     padding: 0.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex-direction: column;
+    flex-direction:column;
 }
 
 .feature h3 {
     font-family: 'Italiana', serif;
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    text-align: left;
+    text-align: center;
+    color: #333;
 }
 
 .feature .material-icons-outlined {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #333;
 }
 
@@ -511,6 +578,7 @@ font-weight: 300;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 
 /* For tablets og mindre skjermer */
 @media (max-width: 768px) {
